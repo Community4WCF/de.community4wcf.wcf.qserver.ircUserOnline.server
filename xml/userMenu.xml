@@ -6,8 +6,8 @@
 			<showorder>4</showorder>
 		</usermenuitem>
 		
-		<usermenuitem name="wcf.user.menu.ircSettings.onlineUsersChannelList">
-			<controller><![CDATA[wcf\form\IRCOnlineUserChannelListPage]]></controller>
+		<usermenuitem name="wcf.user.menu.ircSettings.UserOnlineChannelList">
+			<controller><![CDATA[wcf\form\IRCUserOnlineChannelListPage]]></controller>
 			<parent>wcf.user.menu.ircSettings</parent>
 		</usermenuitem>
 		<!-- /settings -->

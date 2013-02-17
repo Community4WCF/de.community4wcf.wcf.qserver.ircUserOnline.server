@@ -5,11 +5,11 @@ use wcf\system\clipboard\ClipboardHandler;
 use wcf\system\menu\user\UserMenu;
 use wcf\system\WCF;
 
-class IRCOnlineUserChannelListPage extends SortablePage {
+class IRCUserOnlineChannelListPage extends SortablePage {
 	/**
 	 * @see	wcf\page\AbstractPage::$templatename
 	 */
-	public $templateName = 'ircOnlineUserChannelList';
+	public $templateName = 'ircUserOnlineChannelList';
 	
 	/**
 	 * @see	wcf\page\AbstractPage::$loginRequired
@@ -48,7 +48,7 @@ class IRCOnlineUserChannelListPage extends SortablePage {
 	 */
 	public function show() {
 		// set active tab
-		UserMenu::getInstance()->setActiveMenuItem('wcf.user.menu.ircSettings.onlineUsersChannelList');
+		UserMenu::getInstance()->setActiveMenuItem('wcf.user.menu.ircSettings.UserOnlineChannelList');
 		
 		parent::show();
 	}
