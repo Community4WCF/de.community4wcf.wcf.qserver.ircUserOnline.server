@@ -7,7 +7,6 @@
 		<isunique>0</isunique>
 		<version>1.0.0 Alpha 1</version>
 		<date>2013-02-16</date>
-        <plugin>com.woltlab.wcf.user</plugin>
 	</packageinformation>
 
 	<authorinformation>
@@ -23,6 +22,10 @@
 
 	<instructions type="install">        
         <!-- config -->
-        <instruction type="userOption">xml/userOption.xml</instruction>
+        <instruction type="userMenu">xml/userMenu.xml</instruction>
+        
+        <!-- files -->
+		<instruction type="file">files.tar</instruction>
+		<instruction type="template">templates.tar</instruction>
 	</instructions>
 </package>
