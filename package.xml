@@ -7,6 +7,7 @@
 		<isunique>0</isunique>
 		<version>1.0.0 Alpha 1</version>
 		<date>2013-02-16</date>
+        <plugin>com.woltlab.wcf.user</plugin>
 	</packageinformation>
 
 	<authorinformation>
@@ -31,6 +32,9 @@
 		
 		<!-- sql -->
 		<instruction type="sql">sql/install.sql</instruction>
+        
+        <!-- config -->
+        <instruction type="userOption">userOption.xml</instruction>
 	</instructions>
 
 	<instructions type="update" fromversion="1.0.0 Alpha *">
@@ -44,4 +48,7 @@
 		
 		<!-- sql -->
 		<instruction type="sql">sql/install.sql</instruction>
+        
+        <!-- config -->
+        <instruction type="userOption">userOption.xml</instruction>
 </package>
