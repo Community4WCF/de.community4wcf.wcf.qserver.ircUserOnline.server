@@ -7,7 +7,7 @@ class ChannelUserOnline extends DatabaseObject {
 	/**
 	 * @see	wcf\data\DatabaseObject::$databaseTableName
 	 */
-	protected static $databaseTableName = 'user_channel';
+	protected static $databaseTableName = 'irc_useronline_channel';
 	
 	/**
 	 * @see	wcf\data\DatabaseObject::$databaseTableIndexName

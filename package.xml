@@ -27,5 +27,8 @@
         <!-- files -->
 		<instruction type="file">files.tar</instruction>
 		<instruction type="template">templates.tar</instruction>
+        
+        <!-- sql -->
+		<instruction type="sql">sql/install.sql</instruction>
 	</instructions>
 </package>
