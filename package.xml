@@ -21,34 +21,8 @@
 		<requiredpackage minversion="1.0.0 Alpha 1">com.woltlab.wcf.user</requiredpackage>
 	</requiredpackages>
 
-	<instructions type="install">
-		<!-- languages -->
-		<instruction type="language">language/*.xml</instruction>
-		
-		<!-- files -->
-		<instruction type="file">files.tar</instruction>
-		<instruction type="template">templates.tar</instruction>
-		<instruction type="acpTemplate">acptemplates.tar</instruction>
-		
-		<!-- sql -->
-		<instruction type="sql">sql/install.sql</instruction>
-        
+	<instructions type="install">        
         <!-- config -->
-        <instruction type="userOption">userOption.xml</instruction>
+        <instruction type="userOption">xml/userOption.xml</instruction>
 	</instructions>
-
-	<instructions type="update" fromversion="1.0.0 Alpha *">
-		<!-- languages -->
-		<instruction type="language">language/*.xml</instruction>
-		
-		<!-- files -->
-		<instruction type="file">files.tar</instruction>
-		<instruction type="template">templates.tar</instruction>
-		<instruction type="acpTemplate">acptemplates.tar</instruction>
-		
-		<!-- sql -->
-		<instruction type="sql">sql/install.sql</instruction>
-        
-        <!-- config -->
-        <instruction type="userOption">userOption.xml</instruction>
 </package>
