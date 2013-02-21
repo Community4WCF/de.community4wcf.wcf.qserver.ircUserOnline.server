@@ -46,7 +46,7 @@
 </div>
 
 {hascontent}
-	<div class="marginTop tabularBox tabularBoxTitle shadow messageGroupList channelList jsClipboardContainer" data-type="de.community4wcf.qserver.ircUserOnline.server.channel">
+	<div class="marginTop tabularBox tabularBoxTitle shadow messageGroupList channelList jsClipboardContainer" data-type="de.community4wcf.wcf.qserver.ircUserOnline.server.channel">
 		<hgroup>
 			<h1>{lang}wcf.ircUserOnline.user.channel{/lang} <span class="badge badgeInverse">{#$objects|count}</span></h1>
 		</hgroup>
