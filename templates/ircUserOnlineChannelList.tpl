@@ -1,16 +1,17 @@
 {include file='documentHeader'}
 
 <head>
-	<title>{lang}wcf.user.ircUserOnline.channelList{/lang} - {lang}wcf.user.usercp{/lang} - {PAGE_TITLE|language}</title>
+	<title>{lang}wcf.ircUserOnline.user.channelList{/lang} - {lang}wcf.user.usercp{/lang} - {PAGE_TITLE|language}</title>
 	{include file='headInclude'}
+	<script type="text/javascript" src="{@$__wcf->getPath('wcf')}js/IRC.Channel.js"></script>
 	
 	<script type="text/javascript">
 		//<![CDATA[
 		$(function() {
 			WCF.Clipboard.init('wcf\\page\\IRCUserOnlineChannelListPage', {@$hasMarkedItems}, { });
 		
-			var $editorHandler = new WCF.IRCUserOnline.channel.EditorHandler();
-			new WCF.IRCUserOnline.channel.Clipboard($editorHandler);
+			var $editorHandler = new WCF.IRC.Channel.EditorHandler();
+			new WCF.IRC.Channel.Clipboard($editorHandler);
 		}
 		//]]>
 	</script>
@@ -24,7 +25,7 @@
 
 <header class="boxHeadline">
 	<hgroup>
-		<h1>{lang}wcf.user.ircUserOnline.channelList{/lang}</h1>
+		<h1>{lang}wcf.ircUserOnline.user.channelList{/lang}</h1>
 	</hgroup>
 </header>
 
@@ -45,16 +46,16 @@
 {hascontent}
 	<div class="marginTop tabularBox tabularBoxTitle shadow messageGroupList channelList jsClipboardContainer" data-type="de.community4wcf.qserver.ircUserOnline.server.channel">
 		<hgroup>
-			<h1>{lang}wcf.user.ircUserOnline.channel{/lang} <span class="badge badgeInverse">{#$objects|count}</span></h1>
+			<h1>{lang}wcf.ircUserOnline.user.channel{/lang} <span class="badge badgeInverse">{#$objects|count}</span></h1>
 		</hgroup>
 
 		<table class="table">
 			<thead>
 				<tr>
 					<th class="columnMark"><label><input type="checkbox" class="jsClipboardMarkAll" /></label></th>
-					<th class="columnTitle columnChannelname{if $sortField == 'channel'} active {@$sortOrder}{/if}"><a href="{link controller='IRCUserOnlineChannelList'}pageNo={@$pageNo}&sortField=channel&sortOrder={if $sortField == 'channel' && $sortOrder == 'ASC'}DESC{else}ASC{/if}{/link}">{lang}wcf.user.ircUserOnline.channel.channelName{/lang}</a></th>
-					<th class="columnText columnSecurityToken{if $sortField == 'securityToken'} active {@$sortOrder}{/if}"><a href="{link controller='IRCUserOnlineChannelList'}&pageNo={@$pageNo}&sortField=securityToken&sortOrder={if $sortField == 'securityToken' && $sortOrder == 'ASC'}DESC{else}ASC{/if}{/link}">{lang}wcf.user.ircUserOnline.channel.securityToken{/lang}</a></th>
-					<th class="columnText columnTime{if $sortField == 'time'} active {@$sortOrder}{/if}"><a href="{link controller='IRCUserOnlineChannelList'}&pageNo={@$pageNo}&sortField=time&sortOrder={if $sortField == 'time' && $sortOrder == 'ASC'}DESC{else}ASC{/if}{/link}">{lang}wcf.user.ircUserOnline.channel.time{/lang}</a></th>
+					<th class="columnTitle columnChannelname{if $sortField == 'channel'} active {@$sortOrder}{/if}"><a href="{link controller='IRCUserOnlineChannelList'}pageNo={@$pageNo}&sortField=channel&sortOrder={if $sortField == 'channel' && $sortOrder == 'ASC'}DESC{else}ASC{/if}{/link}">{lang}wcf.ircUserOnline.user.channel.channelName{/lang}</a></th>
+					<th class="columnText columnSecurityToken{if $sortField == 'securityToken'} active {@$sortOrder}{/if}"><a href="{link controller='IRCUserOnlineChannelList'}&pageNo={@$pageNo}&sortField=securityToken&sortOrder={if $sortField == 'securityToken' && $sortOrder == 'ASC'}DESC{else}ASC{/if}{/link}">{lang}wcf.ircUserOnline.user.channel.securityToken{/lang}</a></th>
+					<th class="columnText columnTime{if $sortField == 'time'} active {@$sortOrder}{/if}"><a href="{link controller='IRCUserOnlineChannelList'}&pageNo={@$pageNo}&sortField=time&sortOrder={if $sortField == 'time' && $sortOrder == 'ASC'}DESC{else}ASC{/if}{/link}">{lang}wcf.ircUserOnline.user.channel.time{/lang}</a></th>
 				</tr>
 			</thead>
 			
@@ -87,7 +88,7 @@
 		<div class="jsClipboardEditor" data-types="[ 'de.community4wcf.qserver.ircUserOnline.server.channel' ]"></div>
 	</div>
 {hascontentelse}
-	<p class="info">{lang}wcf.user.ircUserOnline.channelList.noChannel{/lang}</p>
+	<p class="info">{lang}wcf.ircUserOnline.user.channelList.noChannel{/lang}</p>
 {/hascontent}
 
 {include file='footer'}

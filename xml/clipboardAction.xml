@@ -2,20 +2,27 @@
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/clipboardAction.xsd">
 	<import>
 		<!-- channel -->
-        <action name="manageBlacklist">
+        <action name="assignLabel">
 			<actionclassname><![CDATA[wcf\system\clipboard\action\IRCUserOnlineChannelClipboardAction]]></actionclassname>
 			<showorder>1</showorder>
 			<pages>
 				<page><![CDATA[wcf\page\IRCUserOnlineChannelListPage]]></page>
 			</pages>
 		</action>
-		<action name="delete">
+        <action name="manageBlacklist">
 			<actionclassname><![CDATA[wcf\system\clipboard\action\IRCUserOnlineChannelClipboardAction]]></actionclassname>
 			<showorder>2</showorder>
 			<pages>
 				<page><![CDATA[wcf\page\IRCUserOnlineChannelListPage]]></page>
 			</pages>
 		</action>
-		<!-- /article -->
+		<action name="delete">
+			<actionclassname><![CDATA[wcf\system\clipboard\action\IRCUserOnlineChannelClipboardAction]]></actionclassname>
+			<showorder>3</showorder>
+			<pages>
+				<page><![CDATA[wcf\page\IRCUserOnlineChannelListPage]]></page>
+			</pages>
+		</action>
+		<!-- /channel -->
 	</import>
 </data>
