@@ -147,12 +147,12 @@ WCF.IRC.Channel.EditorHandler = Class.extend({
 });
 
 /**
- * Article editor handler for channel page.
+ * Channel editor handler for channel page.
  * 
  * @see	WCF.IRC.Channel.EditorHandler
  * @param	array<object>	availableLabels
  */
-WCF.IRC.Channel.EditorHandlerArticle = WCF.IRC.Channel.EditorHandler.extend({
+WCF.IRC.Channel.EditorHandlerChannel = WCF.IRC.Channel.EditorHandler.extend({
 	/**
 	 * list of available labels
 	 * @var	array<object>
@@ -244,6 +244,7 @@ WCF.IRC.Channel.Clipboard = Class.extend({
 		$('.jsClipboardEditor').each($.proxy(function(index, container) {
 			var $container = $(container);
 			var $types = eval($container.data('types'));
+			
 			if (WCF.inArray('de.community4wcf.wcf.qserver.ircUserOnline.server.channel', $types)) {
 				$container.on('clipboardAction', $.proxy(this._execute, this));
 				$container.on('clipboardActionResponse', $.proxy(this._evaluateResponse, this));

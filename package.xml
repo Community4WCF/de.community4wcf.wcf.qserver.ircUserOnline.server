@@ -24,6 +24,7 @@
         <!-- config -->
         <instruction type="userMenu">xml/userMenu.xml</instruction>
         <instruction type="clipboardAction">xml/clipboardAction.xml</instruction>
+        <instruction type="objectType">xml/objectType.xml</instruction>
         
         <!-- files -->
 		<instruction type="file">files.tar</instruction>
