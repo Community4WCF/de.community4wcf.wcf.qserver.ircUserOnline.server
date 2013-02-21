@@ -1,4 +1,9 @@
 /**
+ * IRC namespace
+ */
+WCF.IRC = {};
+
+/**
  * Channel namespace
  */
 WCF.IRC.Channel = {};

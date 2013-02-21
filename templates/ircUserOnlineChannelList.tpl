@@ -3,7 +3,7 @@
 <head>
 	<title>{lang}wcf.ircUserOnline.user.channelList{/lang} - {lang}wcf.user.usercp{/lang} - {PAGE_TITLE|language}</title>
 	{include file='headInclude'}
-	<script type="text/javascript" src="{@$__wcf->getPath('wcf')}js/IRC.Channel.js"></script>
+	<script type="text/javascript" src="{@$__wcf->getPath('wcf')}js/WCF.IRC.Channel.js"></script>
 	
 	<script type="text/javascript">
 		//<![CDATA[
@@ -12,7 +12,9 @@
 		
 			var $editorHandler = new WCF.IRC.Channel.EditorHandler();
 			new WCF.IRC.Channel.Clipboard($editorHandler);
-		}
+			
+			new WIKI.Article.Label.Manager('{link controller='IRCUserOnlineChannelListPage'}{if $filter|isset}filter={@$filter}{/if}&sortField={$sortField}&sortOrder={$sortOrder}&pageNo={@$pageNo}{/link}');
+		});
 		//]]>
 	</script>
 </head>
