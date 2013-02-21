@@ -13,7 +13,7 @@
 			var $editorHandler = new WCF.IRC.Channel.EditorHandler();
 			new WCF.IRC.Channel.Clipboard($editorHandler);
 			
-			new WIKI.Article.Label.Manager('{link controller='IRCUserOnlineChannelListPage'}{if $filter|isset}filter={@$filter}{/if}&sortField={$sortField}&sortOrder={$sortOrder}&pageNo={@$pageNo}{/link}');
+			new WCF.IRC.Channel.Label.Manager('{link controller='IRCUserOnlineChannelListPage'}{if $filter|isset}filter={@$filter}{/if}&sortField={$sortField}&sortOrder={$sortOrder}&pageNo={@$pageNo}{/link}');
 		});
 		//]]>
 	</script>
