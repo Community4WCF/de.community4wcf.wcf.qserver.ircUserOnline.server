@@ -64,7 +64,7 @@
 			<tbody>
 			{content}
 				{foreach from=$objects item=channel}
-					<tr class="channel" data-channel-id="{@$channel->channelID}">
+					<tr class="channel jsClipboardObject" data-channel-id="{@$channel->channelID}">
 						<td class="columnMark">
 							<label><input type="checkbox" class="jsClipboardItem" data-object-id="{@$channel->channelID}" /></label>
 						</td>
@@ -87,7 +87,7 @@
 	<div class="contentNavigation">
 		{@$pagesLinks}
 		
-		<div class="jsClipboardEditor" data-types="[ 'de.community4wcf.qserver.ircUserOnline.server.channel' ]"></div>
+		<nav class="jsClipboardEditor" data-types="[ 'de.community4wcf.qserver.ircUserOnline.server.channel' ]"></nav>
 	</div>
 {hascontentelse}
 	<p class="info">{lang}wcf.ircUserOnline.user.channelList.noChannel{/lang}</p>
