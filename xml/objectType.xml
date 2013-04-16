@@ -7,5 +7,10 @@
 			<definitionname>com.woltlab.wcf.clipboardItem</definitionname>
 			<listclassname>wcf\data\irc\useronline\channel\ChannelUserOnlineList</listclassname>
 		</type>
+        <type>
+			<name>de.community4wcf.wcf.qserver.ircUserOnline.server.channel</name>
+			<definitionname>com.woltlab.wcf.moderation.activation</definitionname>
+			<classname>wcf\system\moderation\queue\activation\QServerChannelModerationQueueActivationHandler</classname>
+		</type>
 	</import>
 </data>
