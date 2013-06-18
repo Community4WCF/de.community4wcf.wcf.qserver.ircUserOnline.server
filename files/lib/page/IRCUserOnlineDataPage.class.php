@@ -1,5 +1,7 @@
 <?php
-namespace wcf\page;
+namespace ios\page;
+
+use wcf\page\Abstractpage;
 
 class IRCUserOnlineDataPage extends AbstractPage {
     public $channel = '';

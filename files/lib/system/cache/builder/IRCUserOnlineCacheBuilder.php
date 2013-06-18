@@ -1,5 +1,5 @@
 <?php
-namespace wcf\system\cache\builder;
+namespace ios\system\cache\builder;
 
 use wcf\util\OpServUtil;
 

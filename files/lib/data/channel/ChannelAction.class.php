@@ -1,14 +1,14 @@
 <?php
-namespace wcf\data\irc\useronline\channel;
+namespace ios\data\channel;
 use wcf\data\AbstractDatabaseObjectAction;
 use wcf\system\clipboard\ClipboardHandler;
 use wcf\data\IClipboardAction;
 
-class ChannelUserOnlineAction extends AbstractDatabaseObjectAction implements IClipboardAction {
+class ChannelAction extends AbstractDatabaseObjectAction implements IClipboardAction {
     /**
      * @see wcf\data\AbstractDatabaseObjectAction::$className
      */
-    protected $className = 'wcf\data\irc\useronline\channel\ChannelUserOnlineEditor';
+    protected $className = 'ios\data\channel\ChannelEditor';
 
     /**
      * @see DatabaseObjectEditor::create()
@@ -30,6 +30,6 @@ class ChannelUserOnlineAction extends AbstractDatabaseObjectAction implements IC
      * @see wcf\data\IClipboardAction::unmarkAll()
      */
     public function unmarkAll() {
-        ClipboardHandler::getInstance()->removeItems(ClipboardHandler::getInstance()->getObjectTypeID('de.community4wcf.wcf.qserver.ircUserOnline.server.channel'));
+        ClipboardHandler::getInstance()->removeItems(ClipboardHandler::getInstance()->getObjectTypeID('de.community4wcf.ios.channel'));
     }
 }

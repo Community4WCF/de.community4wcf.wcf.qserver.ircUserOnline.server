@@ -1,5 +1,5 @@
 <?php
-namespace wcf\system\moderation\queue\activation;
+namespace ios\system\moderation\queue\activation;
 use wcf\data\irc\useronline\channel\ChannelUserOnline;
 use wcf\data\irc\useronline\channel\ChannelUserOnlineList;
 use wcf\data\irc\useronline\channel\ChannelUserOnlineAction;
